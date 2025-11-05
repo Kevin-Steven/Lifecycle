@@ -1,2 +1,10 @@
 <h1>Home Page</h1>
 <hr>
+
+<h3>Tradicional {{ traditionProperty }}</h3>
+<h3>Signal {{ signalProperty() }}</h3>
+
+<button (click)="changeTradicion()">Cambiar tradicional</button>
+<button (click)="changeSignal()">Cambiar Signal</button>
+
+<app-title [title]="traditionProperty"/>
